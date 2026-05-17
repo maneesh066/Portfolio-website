@@ -1,0 +1,250 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maneesh Kumar M - Aspiring Software Engineer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS for layout -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand logo" href="#">Maneesh Kumar M</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Journey</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-text fade-in-up">
+                    <p class="greeting">Hello, I'm</p>
+                    <h1 class="name glow-text">Maneesh Kumar M</h1>
+                    <h2 class="title typing-animation">Aspiring Software Engineer</h2>
+                    <p class="mt-3 text-light fs-5">Passionate about creating modern, efficient, and user-focused web applications.</p>
+                    <div class="mt-4">
+                        <a href="#projects" class="btn btn-neon me-3">View My Work</a>
+                        <a href="#contact" class="btn btn-outline-neon">Contact Me</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center mt-5 mt-lg-0 hero-image-container fade-in-up delay-1">
+                    <div class="profile-card glass-card">
+                        <!-- We will ask user to place their image as profile.jpg in static/images/ -->
+                        <img src="{% static 'professional_pic.jpeg' %}" alt="Maneesh Kumar M" class="img-fluid profile-img" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=350&q=80'">
+                        <div class="neon-border"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="particles"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 section-padding">
+        <div class="container">
+            <h2 class="section-title text-center glow-text mb-5">About Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="glass-card p-5 fade-in-up">
+                        <p class="lead">
+                            I am Maneesh Kumar M, an Aspiring Software Engineer passionate about creating modern, efficient, and user-focused web applications. I enjoy developing scalable solutions using technologies like Django, Flask, HTML, CSS, and JavaScript while continuously learning and improving my technical expertise.
+                        </p>
+                        <p>
+                            Recently, I have been working on Django-based projects, focusing on backend development, authentication systems, and database-driven applications. Along with technical skills, I possess strong communication, leadership, problem-solving, and teamwork abilities that help me collaborate effectively and adapt to new challenges. I am always motivated to explore emerging technologies and build impactful digital experiences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 section-padding">
+        <div class="container">
+            <h2 class="section-title text-center glow-text mb-5">Technical Skills</h2>
+            <div class="row g-4 justify-content-center text-center">
+                <div class="col-md-3 col-sm-6 fade-in-up">
+                    <div class="skill-card glass-card p-4">
+                        <i class="fab fa-python fa-3x mb-3 text-neon"></i>
+                        <h5>Python</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 fade-in-up delay-1">
+                    <div class="skill-card glass-card p-4">
+                        <i class="fa-brands fa-js fa-3x mb-3 text-neon"></i>
+                        <h5>JavaScript</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 fade-in-up delay-2">
+                    <div class="skill-card glass-card p-4">
+                        <i class="fa-solid fa-server fa-3x mb-3 text-neon"></i>
+                        <h5>Django & Flask</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 fade-in-up delay-3">
+                    <div class="skill-card glass-card p-4">
+                        <i class="fa-solid fa-database fa-3x mb-3 text-neon"></i>
+                        <h5>MySQL & SQLite</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5 fade-in-up">
+                <div class="badges-container">
+                    <span class="neon-badge">HTML5</span>
+                    <span class="neon-badge">CSS3</span>
+                    <span class="neon-badge">Bootstrap</span>
+                    <span class="neon-badge">Git & GitHub</span>
+                    <span class="neon-badge">VS Code</span>
+                    <span class="neon-badge">Responsive Design</span>
+                    <span class="neon-badge">Cybersecurity Basics</span>
+                    <span class="neon-badge">Leadership</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey / Timeline Section -->
+    <section id="experience" class="py-5 section-padding">
+        <div class="container">
+            <h2 class="section-title text-center glow-text mb-5">My Journey</h2>
+            <div class="timeline">
+                
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card p-4">
+                        <span class="timeline-date text-neon">2024 - Present</span>
+                        <h4>Bachelor of Computer Applications (BCA)</h4>
+                        <h5>Don Bosco College, Kottiyam</h5>
+                        <p>Currently in 3rd Year, focusing on software development and computer science fundamentals.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card p-4">
+                        <span class="timeline-date text-neon">Recent</span>
+                        <h4>Practical Experience</h4>
+                        <h5>Internships & Freelance</h5>
+                        <p>Engaged in internships, freelance work, and extensive personal projects to build real-world web applications and solid backend architectures.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card p-4">
+                        <span class="timeline-date text-neon">2022 - 2024</span>
+                        <h4>Higher Secondary Education</h4>
+                        <h5>C.V.K.M Higher Secondary School</h5>
+                        <p>Graduated with 80%. Built a strong foundation for analytical thinking and problem solving.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card p-4">
+                        <span class="timeline-date text-neon">2021 - 2022</span>
+                        <h4>High School Education</h4>
+                        <h5>MAHATMAJI MEMMORIAL Higher Secondary School</h5>
+                        <p>Graduated with 92.2%. Developed an early interest in technology and sciences.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 section-padding">
+        <div class="container">
+            <h2 class="section-title text-center glow-text mb-5">Featured Projects</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 fade-in-up">
+                    <div class="project-card glass-card overflow-hidden">
+                        <div class="row g-0">
+                            <div class="col-md-5 project-img-container">
+                                <img src="{% static 'images/goldenfork.jpg' %}" class="img-fluid project-img" alt="Goldenfork" onerror="this.src='https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=500&q=80'">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body p-4 d-flex flex-column h-100 justify-content-center">
+                                    <h3 class="card-title glow-text">Restaurant Management Website</h3>
+                                    <h5 class="text-neon mb-3">"Goldenfork"</h5>
+                                    <p class="card-text">
+                                        A modern restaurant management web application designed to simplify and streamline restaurant operations. Features include a complex order tracking workflow, live cart logic, multi-category architecture, kitchen management panel with messaging, and OTP verification for complaint tracking.
+                                    </p>
+                                    <div class="mb-4 project-tech">
+                                        <span class="badge bg-dark border border-secondary text-light me-1">Django</span>
+                                        <span class="badge bg-dark border border-secondary text-light me-1">Bootstrap</span>
+                                        <span class="badge bg-dark border border-secondary text-light me-1">SQLite</span>
+                                        <span class="badge bg-dark border border-secondary text-light me-1">SMTP</span>
+                                    </div>
+                                    <a href="https://github.com/maneesh066/Restaurant-Management-Goldenfork.git" target="_blank" class="btn btn-outline-neon w-50"><i class="fab fa-github me-2"></i>View Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 section-padding">
+        <div class="container">
+            <h2 class="section-title text-center glow-text mb-5">Get In Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center fade-in-up">
+                    <div class="glass-card p-5">
+                        <h3 class="mb-4 text-light">Let's build something amazing together.</h3>
+                        <p class="text-light fs-5 mb-5">I am currently open for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                        
+                        <div class="d-flex justify-content-center gap-4 social-links">
+                            <a href="mailto:maneeshkallada37@gmail.com" class="social-icon" title="Email"><i class="fas fa-envelope fa-2x"></i></a>
+                            <a href="https://www.linkedin.com/in/maneeshkumarm006" target="_blank" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+                            <a href="https://github.com/maneesh066" target="_blank" class="social-icon" title="GitHub"><i class="fab fa-github fa-2x"></i></a>
+                        </div>
+                        
+                        <div class="mt-5">
+                            <a href="mailto:maneeshkallada37@gmail.com" class="btn btn-neon px-5 py-3">Say Hello</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-4">
+        <div class="container border-top border-secondary pt-4">
+            <p class="text-light m-0">Designed and Built by <span class="text-neon fw-bold">Maneesh Kumar M</span> &copy; <span class="text-neon fw-bold fs-5">2026</span></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
